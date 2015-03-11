@@ -1,0 +1,55 @@
+IMAPAccount stevensurgnier@gmail.com
+Host imap.gmail.com
+User stevensurgnier@gmail.com
+PassCmd "~/.authinfo.py imap.gmail.com stevensurgnier@gmail.com 993"
+UseIMAPS yes
+CertificateFile "~/.certs/cacert.pem"
+
+IMAPStore stevensurgnier@gmail.com-remote
+Account stevensurgnier@gmail.com
+
+MaildirStore stevensurgnier@gmail.com-local
+Path ~/mail/stevensurgnier@gmail.com/
+Inbox ~/mail/stevensurgnier@gmail.com/INBOX
+
+Channel stevensurgnier@gmail.com-all
+Master :stevensurgnier@gmail.com-remote:
+Slave :stevensurgnier@gmail.com-local:
+Patterns * ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/Starred" "[Gmail]/All Mail"
+Create Both
+SyncState *
+
+Channel stevensurgnier@gmail.com
+Master :stevensurgnier@gmail.com-remote:
+Slave :stevensurgnier@gmail.com-local:
+Patterns "[Gmail]/Sent Mail" "INBOX"
+Create Both
+SyncState *
+
+IMAPAccount steven.surgnier@simple.com
+Host imap.gmail.com
+User steven.surgnier@simple.com
+PassCmd "~/.authinfo.py imap.gmail.com steven.surgnier@simple.com 993"
+UseIMAPS yes
+CertificateFile "~/.certs/cacert.pem"
+
+IMAPStore steven.surgnier@simple.com-remote
+Account steven.surgnier@simple.com
+
+MaildirStore steven.surgnier@simple.com-local
+Path ~/mail/steven.surgnier@simple.com/
+Inbox ~/mail/steven.surgnier@simple.com/INBOX
+
+Channel steven.surgnier@simple.com-all
+Master :steven.surgnier@simple.com-remote:
+Slave :steven.surgnier@simple.com-local:
+Patterns * ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/Starred" "[Gmail]/All Mail"
+Create Both
+SyncState *
+
+Channel steven.surgnier@simple.com
+Master :steven.surgnier@simple.com-remote:
+Slave :steven.surgnier@simple.com-local:
+Patterns "[Gmail]/Sent Mail" "INBOX"
+Create Both
+SyncState *
