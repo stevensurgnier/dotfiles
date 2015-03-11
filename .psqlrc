@@ -1,0 +1,8 @@
+-- show how long a query will take
+\timing on
+
+-- extended display mode
+\x auto
+
+-- TODO set prompt to `[HH:MM:SS] dbname@host $'
+\set PROMPT1 '(%n@%M:%>) %`date +%H:%M:%S` [%/] \n%x%# '
