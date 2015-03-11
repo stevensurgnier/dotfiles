@@ -1,0 +1,22 @@
+[alias]
+	st = status -s
+	ci = commit
+	ca = commit -a
+	pr = pull-request
+	glog = log --oneline --decorate --graph
+	tags = tag -l
+[core]
+  editor = emacs
+[format]
+	pretty = format:"%h %p %d %ai %ce%n  %s%n"
+[merge]
+	tool = emerge
+[url "git@github.com:"]
+	insteadOf = gh:
+[user]
+	name = Steven Surgnier
+	email = stevensurgnier@gmail.com
+[hub]
+  host = github.banksimple.com
+[push]
+  default = current
