@@ -1,0 +1,6 @@
+#!/bin/sh
+
+while :; do
+      mbsync stevensurgnier@gmail.com steven.surgnier@simple.com
+      sleep 30
+done

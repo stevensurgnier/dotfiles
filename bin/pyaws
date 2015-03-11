@@ -1,0 +1,4 @@
+#!/bin/sh
+
+AWS_IPYTHON=$HOME/simple/ops/aws-ipython
+exec chpst -e $HOME/aws/env $AWS_IPYTHON/venv/bin/ipython
