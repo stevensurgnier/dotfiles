@@ -1,0 +1,5 @@
+symlinks.sh
+.symlinkignore
+.Rprofile
+.git
+.gitignore
