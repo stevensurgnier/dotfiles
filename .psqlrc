@@ -1,4 +1,4 @@
--- show how long a query will take
+-- show query execution duration
 \timing on
 
 -- extended display mode
