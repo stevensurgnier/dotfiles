@@ -9,7 +9,7 @@ $PATH
 TERM=screen-256color-bce
 CLICOLOR=1
 _JAVA_OPTIONS=-Djava.awt.headless=true
-JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 PS1="[\$(date +%k:%M:%S)] \h:\w$ "
 LC_ALL=en_US.UTF-8
 LANG=en_US.UTF-8
