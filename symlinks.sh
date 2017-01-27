@@ -14,8 +14,8 @@ if [ -f .symlinkignore ]; then
 fi
 
 for relfile in {.,}*; do
-    absfile="$PWD/${relfile##*/}"
     if [[ ! "$SYMLINKIGNORE" =~ "$relfile" ]]; then
+        absfile="$PWD/${relfile##*/}"
         ln -sv $absfile $HOME/$relfile
     fi
 done
