@@ -30,6 +30,7 @@ alias emacs="open -a /Applications/Emacs.app $1"
 alias mvn3="mvn"
 alias json="python -m json.tool"
 alias xmlpp="xmllint --format"
+alias ss="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine"
 
 sshagent () {
     . "${HOME}"/bin/sshagent
