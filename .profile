@@ -29,6 +29,7 @@ alias chromeInsecure="open -n -a Google\ Chrome --args --disable-web-security --
 alias emacs="open -a /Applications/Emacs.app $1"
 alias mvn3="mvn"
 alias json="python -m json.tool"
+alias xmlpp="xmllint --format"
 
 sshagent () {
     . "${HOME}"/bin/sshagent
