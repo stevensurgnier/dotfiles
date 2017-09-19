@@ -24,7 +24,7 @@ alias lS="ls -lhFS"
 alias path='echo -e ${PATH//:/\\n}'
 alias R="R --quiet"
 alias httpserver="python -m SimpleHTTPServer $1"
-alias chrome="open -a /Applications/Google\ Chrome.app/ $1"
+alias chrome="open -a /Applications/Google\ Chrome.app/ --new $1"
 alias chromeInsecure="open -n -a Google\ Chrome --args --disable-web-security --user-data-dir=$HOME/tools/chrome/user-data"
 alias emacs="open -a /Applications/Emacs.app $1"
 alias mvn3="mvn"
